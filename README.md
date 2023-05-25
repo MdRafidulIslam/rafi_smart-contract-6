@@ -23,7 +23,8 @@ here in the above code of ```rafiStorageFactory.sol```the line  ```import ./rafi
 i.e it takes the path of ```rafiSimplestorage.sol``` and paste all code of this file at ```rafiStorageFactory.sol```
 
 
-!![w16](https://user-images.githubusercontent.com/89090776/231071349-512178a6-c6e7-4fa0-af93-8e68b5f32cc5.jpg)
+![six1](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/c97b6970-d177-4449-b979-b2170581e7df)
+
 Figure1: here we see that that the contract ```contract rafiStoragefactory``` have deployed contract ```contract rafiSimplestorage```.
 
 When a contract of a file deploy contract of another file the solidity version of both file must be compatible i.e if version of of a file is ^0.8.0 other <br>
@@ -59,7 +60,8 @@ contract rafiStoragefactory {
 ```
 
 
-![w19](https://user-images.githubusercontent.com/89090776/231094487-f568517d-ca21-4724-91ec-20c90317206f.jpg)
+![six2](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/825b5838-2ced-4804-9acd-46351f8919f1)
+
 Figure2: Again we click on ```createrafiSimplestorage``` button transaction will occur that means contract will be deployed and if we typed '0' at the field of <br> ```rafisimplestorageArray``` button and see that at '0' index a new address of the contract have been assinged.
 
 
@@ -74,6 +76,7 @@ To call a function from the rafiSimplestorage.sol file in the rafiStorageFactory
 
 
 
+![six3](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/7b3c5402-fa8a-488e-a43f-0fa192157528)
 
 Figure3: In the above these are ABI
 
@@ -128,10 +131,12 @@ contract rafiStoragefactory {
 After deploying the above code we will get the following output
 
 
+![six4](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/fca854a7-5250-44f1-bdb1-e51e41a8df96)
 
 Figure4: here at ```rafStore``` button field we typed '1' which is ```rafisimplestorageIndex``` and 65 which is ```rafisimplestorageNumber``` and that is we are<br>
 storing number '65' at '1' index of this contract which is ```rafiSimplestorage```
 
+![six5](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/afc5ec1b-e823-437b-9263-0a7228aa3743)
 
 Figure5: here we have two contracts ```rafiSimplestorage.sol``` that will store variables and another one is ```rafiStorageFactory.sol``` contract that<br>
 will act as a manager of ```rafiSimplestorage``` contract which will deploy and interact with it.
@@ -165,6 +170,7 @@ contract rafiExtrastorage is rafiSimplestorage {
 
 Then we will get the following output:
 
+![six6](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/f52322db-a919-415c-9bcd-5a0ac27fbfc6)
 
 figure6: here we see ```rafiChildstorage``` contract deployed all functions of ```rafiSimplestorage``` contract
 
@@ -174,10 +180,13 @@ We can do it by overriding the functions and for that two keywords we will use '
 In order to override function of parent contract by child contratc we have to do the following<br>
 
 
+![six7](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/e865fe1a-242a-43a0-a1db-894690c459b3)
 
 Figure7: we have to 'virtual' keyword at store fuunction of parent contract. the code is given below:
 
 
+
+![six8](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/317ea00d-7bbe-402d-887b-33d61786586d)
 
 
 Figure8: then we have to 'override' keyword to the inherited 'store' function of the child contract. The code is given below:
@@ -201,5 +210,5 @@ contract rafiChildstorage is rafiSimplestorage {
 
 ```
 
-
+![six9](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/4bb0c566-c6f0-4964-86ff-1d4a8712b4b9)
 Figure9: Here we will get the following output when we deploy the ```rafiChildstorage``` contract
