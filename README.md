@@ -76,9 +76,6 @@ To call a function from the rafiSimplestorage.sol file in the rafiStorageFactory
 
 
 
-![six3](https://github.com/MdRafidulIslam/rafi_smart-contract-6/assets/86659473/7b3c5402-fa8a-488e-a43f-0fa192157528)
-
-Figure3: In the above these are ABI
 
 We will get addresses at ```rafiSimplestorage[] public rafisimplestorageArray;``` and ABI because of this line ```import "./rafiSimplestorage.sol";```
 
@@ -149,10 +146,10 @@ will act as a manager of ```rafiSimplestorage``` contract which will deploy and 
 
 ### Inheritence and overrides
 
-here we will create a child contract of ```rafisimplestorage``` contract which is ```rafiExtrastorage``` contract where it will inherit all <br>
+here we will create a child contract of ```rafisimplestorage``` contract which is ```rafiChildstorage``` contract where it will inherit all <br>
 the functionality of ```rafiSimplestorage``` contract<br>
 
-by creating a new solidity file ```rafiExtrastorage.sol``` file we will write the following code
+by creating a new solidity file ```rafiChildstorage.sol``` file we will write the following code
 
 ```
 //SPDX-License-Identifier:MIT
@@ -161,7 +158,7 @@ pragma solidity ^0.8.0;
 
 import "./rafiSimplestorage.sol";
 
-contract rafiExtrastorage is rafiSimplestorage {
+contract rafiChildstorage is rafiSimplestorage {
 
 }
 
@@ -174,7 +171,7 @@ Then we will get the following output:
 
 figure6: here we see ```rafiChildstorage``` contract deployed all functions of ```rafiSimplestorage``` contract
 
-In ```rafiChildstorage``` contract we want to do something that we want to add '5' to any number we give it<br>
+In ```rafiChildstorage``` contract we want to do something that we want to add '65' to any number we give it<br>
 We can do it by overriding the functions and for that two keywords we will use 'virtual' and 'override'.
 
 In order to override function of parent contract by child contratc we have to do the following<br>
